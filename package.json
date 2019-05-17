@@ -1,0 +1,43 @@
+{
+  "name": "react-kakao-maps",
+  "version": "0.0.1",
+  "description": "React Kakao Map Components",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "build": "tsc --build --force",
+    "test": "jest --coverage --errorOnDeprecated --noStackTrace --passWithNoTests",
+    "tslint": "tslint --format codeFrame --project .",
+    "watch": "jest --watch"
+  },
+  "bugs": {
+    "url": "https://github.com/Musma/react-kakao-maps/issues",
+    "email": "hyeonsoo.david.lee@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Musma/react-kakao-maps.git"
+  },
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "dependencies": {
+    "react": "^16.8",
+    "react-dom": "^16.8"
+  },
+  "devDependencies": {
+    "@types/jest": "^24.0",
+    "@types/react": "^16.8",
+    "@types/react-dom": "^16.8",
+    "daum.maps.d.ts": "Musma/daum.maps.d.ts#0.0.1",
+    "jest": "^24.8",
+    "react-test-renderer": "^16.8",
+    "ts-jest": "^24.0",
+    "tslint": "^5.16",
+    "tslint-config-prettier": "^1.18",
+    "typescript": "^3.4"
+  },
+  "resolutions": {
+    "@types/react": "^16.8.2",
+    "@types/react-dom": "^16.8.2"
+  }
+}
