@@ -39,8 +39,12 @@ export class Map extends React.PureComponent<MapProps, State> {
     const { options } = this.props
     const { map } = this.state
     if (map) {
+      if (prevOptions.center == null) {
+          map.setCenter(options.center)
+      } 
+      
       if (!prevOptions.center.equals(options.center)) {
-        map.setCenter(options.center)
+          map.panTo(options.center);
       }
 
       if (prevOptions.mapTypeId !== options.mapTypeId) {
